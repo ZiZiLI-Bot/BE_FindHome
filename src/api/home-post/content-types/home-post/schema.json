@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_posts",
+  "info": {
+    "singularName": "home-post",
+    "pluralName": "home-posts",
+    "displayName": "home-post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type_home": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "district": {
+      "type": "string"
+    },
+    "subdistrict": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "subaddress": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "detal": {
+      "type": "richtext",
+      "required": true
+    },
+    "acreage": {
+      "type": "decimal",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "bedroomsNumber": {
+      "type": "integer"
+    },
+    "toiletsNumber": {
+      "type": "integer"
+    },
+    "floorNumber": {
+      "type": "integer"
+    },
+    "contactName": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "GoogleMapLocal": {
+      "type": "string"
+    }
+  }
+}
